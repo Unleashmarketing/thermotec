@@ -1,0 +1,2717 @@
+<!DOCTYPE html>
+<html lang="de">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Thermo Tec: Heizung & Sanitär | Frankfurt & Rhein-Main</title>
+    <meta name="description" content="Ihr Meisterbetrieb für Heizung, Bad, Solar & Klima im Raum Frankfurt, Wiesbaden, Mainz, Darmstadt, Hanau & Aschaffenburg. Zuverlässige Haustechnik vom Profi.">
+    
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.thermo-tec.de/">
+    <link rel="preload" href="images/Hero_2.jpeg" as="image">
+
+    <meta property="og:title" content="Thermo Tec: Heizung & Sanitär | Frankfurt & Rhein-Main">
+    <meta property="og:description" content="Meisterbetrieb für Frankfurt, Wiesbaden, Mainz, Darmstadt, Hanau & Aschaffenburg. Badsanierung & Wärmepumpen.">
+    <meta property="og:image" content="https://www.thermo-tec.de/images/thermotec_logo.png">
+    <meta property="og:url" content="https://www.thermo-tec.de/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" href="images/thermotec_logo.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-blue: #B23B34;
+            --primary-teal: #D9573F;
+            --primary-green: #8B2E2E;
+            --light-gray: #f8f9fa;
+            --dark-gray: #2c3e50;
+            --accent-purple: #8B2E2E;
+            --white: #ffffff;
+            --text-dark: #333333;
+            --text-medium: #666666;
+            --border-color: #e0e0e0;
+            --success-green: #28a745;
+            --warning-orange: #ff8c00;
+            --error-red: #dc3545;
+            --gradient-purple: #8B2E2E;
+            --gradient-blue: #B23B34;
+            --gradient-teal: #D9573F;
+            --gradient-green: #E8956B;
+            --brand-gradient: linear-gradient(90deg, #8B2E2E 0%, #B23B34 33%, #D9573F 66%, #E8956B 100%);
+        }
+
+        body {
+            font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+            padding: 1.5rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .header.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+        }
+
+        .nav-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .header.scrolled .logo {
+            color: var(--text-dark);
+        }
+
+        .logo-icon {
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--brand-gradient);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .logo-icon img {
+            width: 60%;
+            height: 60%;
+            object-fit: contain;
+            filter: brightness(0) invert(1);
+        }
+
+        .logo-name{
+            color: var(--text-dark);
+            font-weight: 700;
+            font-size: 1.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .logo-name span {
+            background: var(--brand-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-left: 2px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            color: var(--text-dark);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 400;
+            font-size: 1rem;
+            padding: 0.5rem 0;
+        }
+
+        .header.scrolled .nav-menu a {
+            color: var(--text-dark);
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-blue);
+        }
+
+        .header.scrolled .nav-menu a:hover {
+            color: var(--primary-blue);
+        }
+
+        .contact-button {
+            background: var(--brand-gradient);
+            color: white !important;
+            padding: 12px 24px !important;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: 0 4px 15px rgba(178, 59, 52, 0.3);
+        }
+
+        .contact-button::before {
+            display: none;
+        }
+
+        .contact-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(178, 59, 52, 0.4);
+        }
+
+        .header.scrolled .contact-button {
+            background: var(--brand-gradient);
+            color: white !important;
+            border: none;
+            box-shadow: 0 4px 15px rgba(178, 59, 52, 0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                        url('images/Hero_2.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 200px 0 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            display: none;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 1s ease;
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        .hero .tagline {
+            font-size: 1.3rem;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease 0.3s both;
+            font-weight: 300;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero .subtitle {
+            display: none;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease 0.6s both;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--brand-gradient);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: 0 4px 15px rgba(178, 59, 52, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(178, 59, 52, 0.4);
+        }
+
+        .cta-button-secondary {
+            background: transparent;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .cta-button-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        /* New Expert Section */
+        .expert-section {
+            background: var(--white);
+            padding: 100px 0;
+            margin-top: 0;
+        }
+
+        .expert-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            align-items: center;
+        }
+
+        .expert-text h2 {
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+            color: var(--text-dark);
+            line-height: 1.2;
+            font-weight: 300;
+        }
+
+        .expert-text .animated-word {
+            display: inline-block;
+            position: relative;
+            font-weight: 600;
+            min-width: 400px;
+            height: 1.2em;
+            vertical-align: top;
+            overflow: hidden;
+        }
+
+        .expert-text .word-list {
+            display: block;
+        }
+
+        .expert-text .word-list span {
+            display: block;
+            height: 1.2em;
+            line-height: 1.2em;
+            background: var(--brand-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: rotate-the-words 15s infinite cubic-bezier(0.65, 0, 0.35, 1);
+        }
+
+        @keyframes rotate-the-words {
+            0%,   16% { transform: translateY(0); }
+            20%,  36% { transform: translateY(-100%); }
+            40%,  56% { transform: translateY(-200%); }
+            60%,  76% { transform: translateY(-300%); }
+            80%,  96% { transform: translateY(-400%); }
+            100%      { transform: translateY(-500%); }
+        }
+
+        .expert-content {
+            color: var(--text-medium);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .expert-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .expert-content .highlight {
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+            background: var(--light-gray);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            text-align: left;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark-gray);
+            position: relative;
+            padding-left: 1.25rem;
+        }
+
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.35em;
+            bottom: 0.35em;
+            width: 5px;
+            background: var(--brand-gradient);
+            border-radius: 3px;
+        }
+
+        .section-subtitle {
+            text-align: left;
+            font-size: 1.2rem;
+            color: var(--text-medium);
+            margin-bottom: 3rem;
+            max-width: 700px;
+            padding-left: 1.25rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border-top: 3px solid transparent;
+            border-image: var(--brand-gradient) 1;
+            border-image-slice: 1;
+        }
+
+        .service-card:nth-child(1) .service-image { background-image: url('images/Heizung.png'); }
+        .service-card:nth-child(2) .service-image { background-image: url('images/Bad.jpg'); }
+        .service-card:nth-child(3) .service-image { background-image: url('images/solar.jpg'); }
+        .service-card:nth-child(4) .service-image { background-image: url('images/Klima.png'); }
+        .service-card:nth-child(5) .service-image { background-image: url('images/Lueftung_2.png'); }
+        .service-card:nth-child(6) .service-image { background-image: url('images/service.jpg'); }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+
+        .service-image {
+            height: 280px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .service-content {
+            padding: 2.5rem 2rem;
+        }
+
+        .service-title {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .service-description {
+            color: var(--text-medium);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-features {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .service-features li {
+            color: var(--text-medium);
+            font-size: 0.85rem;
+            line-height: 1.4;
+            margin-bottom: 0.4rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .service-features li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            width: 3px;
+            height: 3px;
+            background: var(--gradient-teal);
+            border-radius: 50%;
+        }
+
+        /* Why Choose Us */
+        .why-choose {
+            padding: 100px 0;
+            background: var(--white);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            align-items: center;
+            margin-bottom: 0;
+        }
+
+        .why-content h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        .why-content p {
+            font-size: 1.05rem;
+            margin-bottom: 2.5rem;
+            color: var(--text-medium);
+            line-height: 1.7;
+        }
+
+        .why-buttons {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .why-btn-primary {
+            background: var(--brand-gradient);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: 0 4px 15px rgba(178, 59, 52, 0.3);
+        }
+
+        .why-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(178, 59, 52, 0.4);
+        }
+
+        .why-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .stat-box {
+            text-align: left;
+        }
+
+        .stat-box .stat-number {
+            font-size: 4rem;
+            font-weight: 700;
+            background: var(--brand-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+            line-height: 1;
+        }
+
+        .stat-box .stat-label {
+            color: var(--text-medium);
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        /* Energy Calculator */
+        .calculator {
+            background: var(--white);
+            padding: 100px 0;
+        }
+
+        .calculator-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .calculator-card {
+            background: white;
+            padding: 3rem 4rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .calculator-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .calculator-tabs {
+            display: flex;
+            gap: 0;
+            justify-content: center;
+            margin-bottom: 3rem;
+            background: var(--light-gray);
+            border-radius: 12px;
+            padding: 6px;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .calculator-tab {
+            flex: 1;
+            padding: 1rem 1.5rem;
+            background: transparent;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-medium);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: inherit;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .tab-icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        .calculator-tab:hover {
+            color: var(--text-dark);
+        }
+
+        .calculator-tab.active {
+            background: white;
+            color: var(--gradient-teal);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .calculator-content {
+            display: none;
+        }
+
+        .calculator-content.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .calculator h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+            font-size: 2.2rem;
+            font-weight: 600;
+        }
+
+        .calculator-subtitle {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--text-medium);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .input-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 0.8rem;
+            font-weight: 500;
+            color: var(--text-dark);
+            font-size: 0.95rem;
+        }
+
+        .input-group input, .input-group select {
+            width: 100%;
+            padding: 16px 20px;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            font-size: 1rem;
+            background: var(--white);
+            transition: all 0.3s ease;
+            color: var(--text-dark);
+        }
+
+        .input-group input:focus, .input-group select:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 3px rgba(90, 125, 181, 0.1);
+        }
+
+        .result {
+            background: var(--light-gray);
+            border-radius: 16px;
+            text-align: center;
+            margin-top: 2rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .result.show {
+            opacity: 1;
+            transform: translateY(0);
+            padding: 2.5rem;
+        }
+
+        .result h3 {
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        .result-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 1rem 0;
+            background: var(--brand-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Process Section */
+        .process {
+            padding: 100px 0;
+            background: var(--light-gray);
+        }
+
+        .process-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            margin-top: 4rem;
+        }
+
+        .process-step {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .process-step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+
+        .process-image {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .process-step:nth-child(1) .process-image { background-image: url('images/Beratung.jpg'); }
+        .process-step:nth-child(2) .process-image { background-image: url('images/Angebot.jpg'); }
+        .process-step:nth-child(3) .process-image { background-image: url('images/Termin.jpg'); }
+        .process-step:nth-child(4) .process-image { background-image: url('images/Installation.png'); }
+        .process-step:nth-child(5) .process-image { background-image: url('images/Inbetrieb.png'); }
+        .process-step:nth-child(6) .process-image { background-image: url('images/Service_2.jpg'); }
+
+        .process-content {
+            padding: 1.8rem 1.5rem;
+        }
+
+        .process-step-number {
+            color: var(--text-medium);
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            background: var(--brand-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .process-step h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 0.8rem;
+            line-height: 1.3;
+        }
+
+        .process-step p {
+            color: var(--text-medium);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        /* Gallery Section Styles */
+        .gallery-section {
+            padding: 100px 0;
+            background: var(--white);
+            overflow: hidden;
+        }
+
+        .gallery-slider {
+            margin-top: 3rem;
+            position: relative;
+            width: 100%;
+            display: flex;
+            overflow: hidden;
+            /* Maskiert die Ränder für einen weichen Übergang */
+            -webkit-mask-image: linear-gradient(90deg, transparent, #fff 10%, #fff 90%, transparent);
+            mask-image: linear-gradient(90deg, transparent, #fff 10%, #fff 90%, transparent);
+        }
+
+        .gallery-track {
+            display: flex;
+            gap: 20px;
+            /* Automatische Animation */
+            animation: scroll 40s linear infinite;
+            width: max-content;
+        }
+
+        .gallery-item {
+            width: 350px;
+            height: 280px;
+            border-radius: 16px;
+            overflow: hidden;
+            flex-shrink: 0;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        /* Hover-Effekt: Bild zoomt, Slider stoppt */
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-track:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-3700px); }
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 100px 0;
+            background: var(--light-gray);
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .faq-intro {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            color: var(--text-medium);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 16px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 1.5rem 2rem;
+            background: none;
+            border: none;
+            text-align: left;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+            line-height: 1.3;
+        }
+
+        .faq-question:hover {
+            color: var(--primary-blue);
+        }
+
+        .faq-icon {
+            font-size: 1.2rem;
+            color: var(--text-medium);
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+            margin-left: 1rem;
+            width: 20px;
+            height: 20px;
+            position: relative;
+        }
+
+        .faq-icon::before,
+        .faq-icon::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 2px;
+            background: var(--text-medium);
+            top: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .faq-icon::before {
+            right: 50%;
+            transform: rotate(45deg);
+            transform-origin: right center;
+        }
+
+        .faq-icon::after {
+            left: 50%;
+            transform: rotate(-45deg);
+            transform-origin: left center;
+        }
+
+        .faq-item.active .faq-icon::before {
+            transform: rotate(-45deg);
+        }
+
+        .faq-item.active .faq-icon::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            padding: 0 2rem;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 0 2rem 1.5rem 2rem;
+        }
+
+        .faq-answer p {
+            color: var(--text-medium);
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: var(--light-gray);
+            padding: 100px 0;
+        }
+
+        .contact-form-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .contact-form-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .contact-form-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .contact-form-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-medium);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .contact-form-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+        }
+
+        .form-grid {
+            background: white;
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 0.875rem 1rem;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--gradient-teal);
+            box-shadow: 0 0 0 3px rgba(217, 87, 63, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .checkbox-group {
+            margin: 1.5rem 0;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            cursor: pointer;
+            font-size: 0.9rem;
+            color: var(--text-medium);
+        }
+
+        .checkbox-label input[type="checkbox"] {
+            margin-top: 0.2rem;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            accent-color: var(--gradient-teal);
+        }
+
+        .checkbox-label a {
+            color: var(--gradient-teal);
+            text-decoration: underline;
+        }
+
+        .form-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .form-submit-btn {
+            background: var(--brand-gradient);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            border: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(178, 59, 52, 0.3);
+            font-family: inherit;
+        }
+
+        .form-submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(178, 59, 52, 0.4);
+        }
+
+        .form-note {
+            color: var(--text-medium);
+            font-size: 0.85rem;
+            text-align: center;
+        }
+
+        .contact-info-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-info-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+
+        .contact-info-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--brand-gradient);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info-icon svg {
+            width: 24px;
+            height: 24px;
+            stroke: white;
+        }
+
+        .contact-info-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-dark);
+        }
+
+        .contact-info-card p {
+            color: var(--text-medium);
+            line-height: 1.6;
+            margin: 0.25rem 0;
+        }
+
+        .contact-info-card a {
+            color: var(--gradient-teal);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-info-card a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-hours {
+            font-size: 0.9rem;
+            margin-top: 0.5rem !important;
+            font-style: italic;
+        }
+
+        .contact-info-emergency {
+            background: linear-gradient(135deg, #fff5f5 0%, #ffe5e5 100%);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 4px solid #dc3545;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .contact-info-emergency svg {
+            width: 24px;
+            height: 24px;
+            stroke: #dc3545;
+            flex-shrink: 0;
+        }
+
+        .contact-info-emergency strong {
+            color: #dc3545;
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-info-emergency p {
+            color: var(--text-dark);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .contact-info-emergency a {
+            color: #dc3545;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .contact-info-emergency a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            background: #2c2c2c;
+            color: white;
+            padding: 80px 0 40px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 6rem;
+            margin-bottom: 4rem;
+        }
+
+        .footer-column h3 {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            font-weight: 600;
+            color: white;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 1rem;
+        }
+
+        .footer-column ul li a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+            display: inline-block;
+        }
+
+        .footer-column ul li a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+
+        .footer-column .underline {
+            text-decoration: underline;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.8rem;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .footer-contact-item svg {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .footer-contact-info {
+            font-size: 0.95rem;
+        }
+
+        .footer-contact-info strong {
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        .footer-contact-info p {
+            margin: 0.2rem 0;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.5;
+        }
+
+        .footer-contact-info a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+        }
+
+        .footer-contact-info a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 2rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            opacity: 0.6;
+            font-size: 0.9rem;
+        }
+
+        .footer-bottom a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            color: white;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Scroll indicator */
+        .scroll-indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 4px;
+            background: var(--brand-gradient);
+            z-index: 1001;
+            transition: width 0.3s ease;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 968px) {
+            .contact-form-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .form-row { grid-template-columns: 1fr; }
+            .form-grid { padding: 2rem; }
+            .contact-form-header h2 { font-size: 2rem; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu { display: none; }
+            .hero h1 { font-size: 2.5rem; }
+            .hero .tagline { font-size: 1.2rem; }
+            .hero-buttons { flex-direction: column; align-items: center; }
+            .expert-container { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
+            .expert-text h2 { font-size: 2.5rem; }
+            .expert-text .animated-word { min-width: 300px; }
+            .input-grid { grid-template-columns: 1fr; gap: 1rem; }
+            .why-grid { grid-template-columns: 1fr; gap: 3rem; }
+            .why-stats { grid-template-columns: 1fr 1fr; gap: 2rem; }
+            .stat-box .stat-number { font-size: 3rem; }
+            .why-buttons { flex-direction: column; }
+            .why-btn-primary, .why-btn-secondary { width: 100%; text-align: center; }
+            .services-grid { grid-template-columns: 1fr; }
+            .process-steps { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+            .footer-content { grid-template-columns: 1fr; gap: 3rem; }
+            
+            /* Calculator Responsive */
+            .price-packages { grid-template-columns: 1fr; }
+            .option-grid { grid-template-columns: 1fr; }
+            .progress-bar { padding: 0 0.5rem; }
+            .progress-step { width: 32px; height: 32px; font-size: 0.9rem; }
+            .calculator-tabs { flex-direction: column; gap: 0.5rem; padding: 8px; }
+            .calculator-tab { font-size: 0.95rem; padding: 0.875rem 1rem; }
+            .calculator-card { padding: 2rem 1.5rem; }
+            .calculator h2 { font-size: 1.8rem; }
+            .calculator-subtitle { font-size: 1rem; }
+            
+            /* Gallery Responsive */
+            .gallery-item { width: 280px; height: 220px; }
+            @keyframes scroll {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-3000px); }
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero { padding: 150px 0 80px; }
+            .hero h1 { font-size: 2rem; line-height: 1.3; }
+            .hero .tagline { font-size: 1rem; }
+            .hero-content { padding: 0 1.5rem; }
+            .expert-section { padding: 60px 0; }
+            .expert-container { padding: 0 1.5rem; gap: 2rem; }
+            .expert-text h2 { font-size: 1.8rem; line-height: 1.3; margin-bottom: 1.5rem; }
+            .expert-text .animated-word { min-width: 200px; font-size: 1.8rem; display: block; margin-top: 0.5rem; }
+            .expert-content { font-size: 1rem; }
+            .expert-content p { margin-bottom: 1rem; }
+            .why-choose { padding: 60px 0; }
+            .why-grid { gap: 2rem; }
+            .why-content h2 { font-size: 2rem; line-height: 1.3; }
+            .why-content p { font-size: 0.95rem; margin-bottom: 1.5rem; }
+            .why-stats { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+            .stat-box .stat-number { font-size: 2.5rem; }
+            .stat-box .stat-label { font-size: 0.9rem; }
+            .why-buttons { flex-direction: column; gap: 1rem; }
+            .why-btn-primary, .why-btn-secondary { width: 100%; text-align: center; padding: 12px 20px; font-size: 0.95rem; }
+            .container { padding: 0 1.5rem; }
+            .section-title { font-size: 2rem; }
+            .section-subtitle { font-size: 1rem; margin-bottom: 2rem; }
+            .services-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .services { padding: 60px 0; }
+            .process-steps { grid-template-columns: 1fr; gap: 1.5rem; }
+            .process { padding: 60px 0; }
+            .calculator { padding: 60px 0; }
+            .calculator-card { padding: 2rem 1.5rem; }
+            .calculator h2 { font-size: 1.8rem; }
+            .calculator-subtitle { font-size: 0.95rem; }
+            .calculator-tabs { flex-direction: column; gap: 0.5rem; padding: 8px; }
+            .calculator-tab { font-size: 0.9rem; padding: 0.75rem 1rem; }
+            .faq { padding: 60px 0; }
+            .faq-container { padding: 0 1.5rem; }
+            .faq-question { font-size: 1rem; padding: 1.2rem 1.5rem; }
+            .faq-intro { font-size: 1rem; }
+            .contact-form { padding: 60px 0; }
+            .contact-form-header h2 { font-size: 2rem; }
+            .contact-form-subtitle { font-size: 1rem; }
+            .footer { padding: 60px 0 30px; }
+            .footer-content { padding: 0 1.5rem; }
+            .why-choose .container > div[style*="margin-top"] { margin-top: 3rem !important; padding: 2rem 1.5rem !important; }
+            .why-choose .container > div h3 { font-size: 1.6rem !important; }
+            .why-choose .container > div p { font-size: 1rem !important; }
+        }
+
+        /* Price Calculator Styles */
+        .progress-bar { display: flex; align-items: center; justify-content: space-between; margin: 2rem 0; padding: 0 2rem; }
+        .progress-step { width: 40px; height: 40px; border-radius: 50%; background: var(--light-gray); border: 2px solid var(--border-color); display: flex; align-items: center; justify-content: center; font-weight: 600; color: var(--text-medium); transition: all 0.3s ease; position: relative; z-index: 2; }
+        .progress-step.active { background: var(--brand-gradient); color: white; box-shadow: 0 4px 12px rgba(178, 59, 52, 0.3); }
+        .progress-step.completed { background: var(--gradient-teal); border-color: transparent; color: white; }
+        .progress-line { flex: 1; height: 2px; background: var(--border-color); margin: 0 -1px; transition: all 0.3s ease; }
+        .progress-line.completed { background: var(--gradient-teal); }
+        .step-indicator { text-align: center; margin-bottom: 2rem; font-size: 1rem; color: var(--text-medium); }
+        .step-indicator .current-step { font-weight: 600; color: var(--text-dark); }
+        .calculator-steps { min-height: 350px; }
+        .calc-step { display: none; animation: fadeIn 0.4s ease; }
+        .calc-step.active { display: block; }
+        .calc-step h3 { font-size: 1.6rem; margin-bottom: 2rem; color: var(--text-dark); text-align: center; }
+        .option-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 2rem; }
+        .option-grid-single { display: grid; grid-template-columns: 1fr; gap: 1rem; margin-bottom: 2rem; }
+        .option-card, .option-card-large { position: relative; cursor: pointer; }
+        .option-card input[type="checkbox"], .option-card input[type="radio"], .option-card-large input[type="radio"] { position: absolute; opacity: 0; cursor: pointer; }
+        .option-content { padding: 1.5rem; border: 2px solid var(--border-color); border-radius: 12px; background: white; transition: all 0.3s ease; }
+        .option-card:hover .option-content, .option-card-large:hover .option-content { border-color: var(--gradient-teal); box-shadow: 0 4px 12px rgba(217, 87, 63, 0.15); }
+        .option-card input:checked ~ .option-content, .option-card-large input:checked ~ .option-content { border-color: var(--gradient-teal); background: rgba(217, 87, 63, 0.05); box-shadow: 0 4px 12px rgba(217, 87, 63, 0.2); }
+        .option-title { font-size: 1.1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.3rem; }
+        .option-desc { font-size: 0.9rem; color: var(--text-medium); }
+        .calculator-navigation { display: flex; justify-content: space-between; gap: 1rem; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border-color); }
+        .calc-btn { padding: 14px 32px; border-radius: 8px; font-size: 1rem; font-weight: 500; cursor: pointer; transition: all 0.3s ease; border: none; font-family: inherit; }
+        .calc-btn-next { background: var(--brand-gradient); color: white; margin-left: auto; box-shadow: 0 4px 15px rgba(178, 59, 52, 0.3); }
+        .calc-btn-next:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(178, 59, 52, 0.4); }
+        .calc-btn-back { background: transparent; color: var(--text-dark); border: 1px solid var(--border-color); }
+        .calc-btn-back:hover { background: var(--light-gray); }
+        .price-result { animation: fadeIn 0.5s ease; }
+        .result-intro { text-align: center; color: var(--text-medium); margin-bottom: 2rem; }
+        .price-packages { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 2rem 0; }
+        .price-package { background: white; border: 2px solid var(--border-color); border-radius: 16px; padding: 2rem; transition: all 0.3s ease; position: relative; }
+        .price-package:hover { border-color: var(--gradient-teal); box-shadow: 0 8px 24px rgba(217, 87, 63, 0.15); transform: translateY(-5px); }
+        .price-package.featured { border-color: var(--gradient-teal); box-shadow: 0 8px 24px rgba(217, 87, 63, 0.2); }
+        .package-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--brand-gradient); color: white; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; white-space: nowrap; }
+        .package-header { text-align: center; margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); }
+        .package-header h4 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-dark); }
+        .package-price { font-size: 2.2rem; font-weight: 700; background: var(--brand-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .package-features { list-style: none; padding: 0; margin: 0; }
+        .package-features li { padding: 0.6rem 0; color: var(--text-dark); font-size: 0.95rem; position: relative; padding-left: 1.8rem; }
+        .package-features li::before { content: '✓'; position: absolute; left: 0; color: var(--gradient-teal); font-weight: 700; font-size: 1.1rem; }
+        .result-cta { text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color); }
+    </style>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HVACBusiness",
+  "name": "Thermo Tec Meisterbetrieb",
+  "image": "https://www.thermo-tec.de/images/thermotec_logo.png",
+  "url": "https://www.thermo-tec.de/",
+  "telephone": "+4915155688230",
+  "email": "info@thermo-tec.de",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Carl-Gladitz-Straße 10",
+    "addressLocality": "Bad Soden-Salmünster",
+    "postalCode": "63628",
+    "addressCountry": "DE"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 50.2833, 
+    "longitude": 9.3667 
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+      "opens": "07:00",
+      "closes": "17:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Friday",
+      "opens": "07:00",
+      "closes": "14:00"
+    }
+  ],
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Frankfurt am Main"
+    },
+    {
+      "@type": "City",
+      "name": "Wiesbaden"
+    },
+    {
+      "@type": "City",
+      "name": "Mainz"
+    },
+    {
+      "@type": "City",
+      "name": "Darmstadt"
+    },
+    {
+      "@type": "City",
+      "name": "Hanau"
+    },
+    {
+      "@type": "City",
+      "name": "Aschaffenburg"
+    },
+    {
+      "@type": "City",
+      "name": "Bad Soden-Salmünster"
+    }
+  ],
+}
+</script>
+</head>
+<body>
+    <div class="scroll-indicator"></div>
+    
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <img src="images/Icon-Flamme.svg" alt="">
+                </div>
+                <div class="logo-name">Thermo<span>Tec</span></div>
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Leistungen</a></li>
+                    <li><a href="#why-choose">Über Uns</a></li>
+                    <li><a href="#contact" class="contact-button">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Alles für die Wärme und Komfort in deinem Zuhause</h1>
+            <p class="tagline">Thermo Tec Meisterbetrieb - Ihr zuverlässiger Partner für Heizung, Sanitär, Solar, Klima und Lüftung.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="cta-button">Zur kostenlosen Beratung</a>
+                <a href="#why-choose" class="cta-button cta-button-secondary">Mehr über uns</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="expert-section">
+        <div class="expert-container">
+            <div class="expert-content">
+                <p>Als neu gegründeter <span class="highlight">Meisterbetrieb</span> verbinden wir frischen Enthusiasmus mit fundiertem Fachwissen. Unser Team bringt langjährige Branchenerfahrung mit und setzt konsequent auf modernste Technologien und nachhaltige Lösungen.</p>
+                
+                <p>Von der energieeffizienten Heizungsmodernisierung über professionelle Badsanierungen bis hin zu zukunftsweisenden Solarlösungen – wir sind Ihr zuverlässiger Partner im Raum <span class="highlight">Frankfurt</span>, <span class="highlight">Wiesbaden</span>, <span class="highlight">Mainz</span>, <span class="highlight">Darmstadt</span>, <span class="highlight">Hanau</span> und <span class="highlight">Aschaffenburg</span> sowie natürlich in Bad Soden-Salmünster.</p>
+            </div>
+            <div class="expert-text">
+                <h2>Wir sind Experten für <span class="animated-word">
+                    <span class="word-list">
+                        <span>Heizung</span>
+                        <span>Sanitär</span>
+                        <span>Solar</span>
+                        <span>Klimatechnik</span>
+                        <span>Lüftung</span>
+                        <span>Heizung</span>
+                    </span>
+                </span></h2>
+            </div>
+        </div>
+    </section>
+
+   <section class="services" id="services">
+       <div class="container">
+           <h2 class="section-title">Unsere Leistungen</h2>
+           <p class="section-subtitle">Von der Planung bis zur Wartung - wir sind Ihr kompetenter Partner für alle Bereiche der Haustechnik</p>
+           
+           <div class="services-grid">
+               <div class="service-card">
+                   <div class="service-image"></div>
+                   <div class="service-content">
+                       <h3 class="service-title">Heizungstechnik</h3>
+                       <p class="service-description">Moderne, energieeffiziente Heizungssysteme für optimalen Wohnkomfort und niedrige Betriebskosten.</p>
+                       <ul class="service-features">
+                           <li>Gasheizungen (Brennwert & Hybrid)</li>
+                           <li>Wärmepumpen (Luft, Wasser, Erdwärme)</li>
+                           <li>Ölbrennwertheizungen</li>
+                           <li>Fußbodenheizung & Heizkörper</li>
+                           <li>Heizungswartung & Reparatur</li>
+                           <li>Hydraulischer Abgleich</li>
+                           <li>Smart Home Integration</li>
+                       </ul>
+                   </div>
+               </div>
+               
+               <div class="service-card">
+                   <div class="service-image"></div>
+                   <div class="service-content">
+                       <h3 class="service-title">Sanitärtechnik</h3>
+                       <p class="service-description">Professionelle Sanitärinstallationen und Badsanierungen nach neuesten Standards und individuellen Wünschen.</p>
+                       <ul class="service-features">
+                           <li>Komplette Badsanierung</li>
+                           <li>Wasserinstallation (Kalt & Warm)</li>
+                           <li>Abwassertechnik & Entwässerung</li>
+                           <li>Sanitärobjekte & Armaturen</li>
+                           <li>Rohrsanierung</li>
+                           <li>Trinkwasseranalyse</li>
+                           <li>Barrierefreie Bäder</li>
+                       </ul>
+                   </div>
+               </div>
+
+               <div class="service-card">
+                   <div class="service-image"></div>
+                   <div class="service-content">
+                       <h3 class="service-title">Solartechnik</h3>
+                       <p class="service-description">Nutzen Sie die kostenlose Sonnenenergie für Warmwasser und Heizungsunterstützung.</p>
+                       <ul class="service-features">
+                           <li>Solarthermie für Warmwasser</li>
+                           <li>Kombianlagen für Heizung & Warmwasser</li>
+                           <li>Photovoltaik-Anlagen</li>
+                           <li>Energiemanagement-Systeme</li>
+                           <li>Wartung & Überwachung</li>
+                           <li>Förderberatung & Antragstellung</li>
+                       </ul>
+                   </div>
+               </div>
+
+               <div class="service-card">
+                   <div class="service-image"></div>
+                   <div class="service-content">
+                       <h3 class="service-title">Klimatechnik</h3>
+                       <p class="service-description">Angenehmes Raumklima das ganze Jahr über mit modernen, energieeffizienten Klimasystemen.</p>
+                       <ul class="service-features">
+                           <li>Split-Klimaanlagen (Single & Multi)</li>
+                           <li>VRV/VRF-Systeme</li>
+                           <li>Kaltwassersätze & Chiller</li>
+                           <li>Klimaserviceeinheiten</li>
+                           <li>Kältemittel-Service</li>
+                           <li>Wartung nach F-Gase-Verordnung</li>
+                           <li>Energieeffizienz-Optimierung</li>
+                       </ul>
+                   </div>
+               </div>
+
+               <div class="service-card">
+                   <div class="service-image"></div>
+                   <div class="service-content">
+                       <h3 class="service-title">Lüftungstechnik</h3>
+                       <p class="service-description">Gesunde Raumluft und Energieeinsparung durch kontrollierte Wohnraumlüftung für Ein- und Mehrfamilienhäuser.</p>
+                       <ul class="service-features">
+                           <li>Zentrale Lüftungsanlagen</li>
+                           <li>Dezentrale Lüftungsgeräte</li>
+                           <li>Wärmerückgewinnung</li>
+                           <li>Luftfilter & Luftreinigung</li>
+                           <li>Entfeuchtung & Befeuchtung</li>
+                           <li>Luftkanalsysteme</li>
+                           <li>Brandschutzklappen</li>
+                       </ul>
+                   </div>
+               </div>
+
+               <div class="service-card">
+                   <div class="service-image"></div>
+                   <div class="service-content">
+                       <h3 class="service-title">Service & Wartung</h3>
+                       <p class="service-description">Regelmäßige Wartung und schnelle Reparaturen für langlebige und effiziente Anlagen.</p>
+                       <ul class="service-features">
+                           <li>Jährliche Heizungswartung</li>
+                           <li>Störungsbeseitigung & Reparatur</li>
+                           <li>Anlageninspektion </li>
+                           <li>Effizienz-Checks</li>
+                           <li>Ersatzteilservice</li>
+                           <li>Fernwartung & Monitoring</li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <section class="why-choose" id="why-choose">
+       <div class="container">
+           <div class="why-grid">
+               <div class="why-content">
+                   <h2>Immer außergewöhnliche Ergebnisse</h2>
+                   <p>
+                       Als neu gegründeter <strong>Meisterbetrieb</strong> verbinden wir frischen Enthusiasmus mit fundiertem 
+                       Fachwissen. Unser Team bringt langjährige Branchenerfahrung mit und setzt konsequent 
+                       auf modernste Technologien und nachhaltige Lösungen.
+                   </p>
+                   <p>
+                       Wir nehmen uns Zeit für Sie und Ihre individuellen Bedürfnisse. Durch unsere schlanken 
+                       Strukturen können wir flexibel auf Ihre Wünsche eingehen und bieten dabei stets 
+                       ein ausgezeichnetes Preis-Leistungs-Verhältnis.
+                   </p>
+                   <div class="why-buttons">
+                       <a href="#contact" class="why-btn-primary">Jetzt Termin vereinbaren</a>
+                   </div>
+               </div>
+               
+               <div class="why-stats">
+                   <div class="stat-box">
+                       <div class="stat-number">7+</div>
+                       <div class="stat-label">Jahre Erfahrung</div>
+                   </div>
+                   
+                   <div class="stat-box">
+                       <div class="stat-number">120+</div>
+                       <div class="stat-label">Abgeschlossene Projekte</div>
+                   </div>
+                   
+                   <div class="stat-box">
+                       <div class="stat-number">4</div>
+                       <div class="stat-label">Zertifizierungen</div>
+                   </div>
+                   
+                   <div class="stat-box">
+                       <div class="stat-number">98%</div>
+                       <div class="stat-label">Kundenzufriedenheit</div>
+                   </div>
+               </div>
+           </div>
+           
+           <div style="margin-top: 5rem; background: white; border-radius: 20px; padding: 3rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center;">
+               <h3 style="font-size: 2rem; margin-bottom: 1rem; color: var(--text-dark); font-weight: 600;">Wir bilden aus!</h3>
+               <p style="font-size: 1.1rem; color: var(--text-medium); max-width: 700px; margin: 0 auto 2rem; line-height: 1.7;">
+                   Als <strong>Meisterbetrieb</strong> bilden wir mit Leidenschaft die nächste Generation aus. 
+                   Du möchtest <strong>Anlagenmechaniker/-in für Sanitär-, Heizungs- und Klimatechnik (SHK)</strong> werden? 
+                   Dann bist du bei uns genau richtig!
+               </p>
+               <a href="mailto:info@thermo-tec.de?subject=Bewerbung%20Ausbildung%20SHK" class="why-btn-primary" style="display: inline-block; text-decoration: none;">
+                   Jetzt bewerben
+               </a>
+           </div>
+       </div>
+   </section>
+
+   <section class="calculator" id="calculator">
+    <div class="calculator-container">
+        <div class="calculator-card">
+            <div class="calculator-header">
+                <h2>Kostenrechner</h2>
+                <p class="calculator-subtitle">
+                    Wählen Sie einen Rechner und erhalten Sie eine erste Einschätzung
+                </p>
+            </div>
+
+            <div class="calculator-tabs">
+                <button class="calculator-tab active" onclick="switchCalculator('price')">
+                    <img src="images/Icon-Wrench.svg" alt="" class="tab-icon">
+                    Sanitär-Preisrechner
+                </button>
+                <button class="calculator-tab" onclick="switchCalculator('heating')">
+                    <img src="images/Icon-Flamme.svg" alt="" class="tab-icon">
+                    Heizkostenrechner
+                </button>
+            </div>
+
+            <div id="price-calculator" class="calculator-content active">
+                <p style="text-align: center; color: var(--text-medium); margin-bottom: 2rem; font-size: 1.05rem;">
+                    Erhalten Sie in wenigen Schritten eine erste Preiseinschätzung für Ihr Sanitärprojekt
+                </p>
+                
+                <div class="progress-bar">
+                    <div class="progress-step active" data-step="1">1</div>
+                    <div class="progress-line"></div>
+                    <div class="progress-step" data-step="2">2</div>
+                    <div class="progress-line"></div>
+                    <div class="progress-step" data-step="3">3</div>
+                    <div class="progress-line"></div>
+                    <div class="progress-step" data-step="4">4</div>
+                </div>
+
+                <div class="step-indicator">
+                    <span class="current-step">Schritt 1</span> von 4
+                </div>
+
+                <div class="calculator-steps">
+                <div class="calc-step active" data-step="1">
+                    <h3>Was ist geplant?</h3>
+                    <div class="option-grid-single">
+                        <label class="option-card-large">
+                            <input type="radio" name="project-type" value="complete">
+                            <div class="option-content">
+                                <div class="option-title">Komplettes Bad</div>
+                                <div class="option-desc">Vollständige Badsanierung mit allen Gewerken</div>
+                            </div>
+                        </label>
+                        <label class="option-card-large">
+                            <input type="radio" name="project-type" value="partial">
+                            <div class="option-content">
+                                <div class="option-title">Teilsanierung / Objektsanierung</div>
+                                <div class="option-desc">Einzelne Bereiche oder Objekte erneuern</div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="calc-step" data-step="2">
+                    <h3>Wie groß ist die Gesamtfläche?</h3>
+                    <div class="input-group">
+                        <label for="area-size">Quadratmeter (m²)</label>
+                        <input type="number" id="area-size" placeholder="z.B. 8" min="1">
+                    </div>
+                    <div class="option-grid">
+                        <label class="option-card">
+                            <input type="radio" name="area-range" value="small">
+                            <div class="option-content">
+                                <div class="option-title">Klein (bis 5 m²)</div>
+                                <div class="option-desc">Gäste-WC</div>
+                            </div>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="area-range" value="medium">
+                            <div class="option-content">
+                                <div class="option-title">Mittel (5-12 m²)</div>
+                                <div class="option-desc">Standard-Bad</div>
+                            </div>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="area-range" value="large">
+                            <div class="option-content">
+                                <div class="option-title">Groß (über 12 m²)</div>
+                                <div class="option-desc">Großes Bad / Wellness</div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="calc-step" data-step="3">
+                    <h3>Welche Ausstattung wünschen Sie?</h3>
+                    <div class="option-grid">
+                        <label class="option-card">
+                            <input type="checkbox" name="equipment" value="dusche">
+                            <div class="option-content">
+                                <div class="option-title">Dusche</div>
+                                <div class="option-desc">Ebenerdige oder mit Wanne</div>
+                            </div>
+                        </label>
+                        <label class="option-card">
+                            <input type="checkbox" name="equipment" value="badewanne">
+                            <div class="option-content">
+                                <div class="option-title">Badewanne</div>
+                                <div class="option-desc">Freistehend oder eingebaut</div>
+                            </div>
+                        </label>
+                        <label class="option-card">
+                            <input type="checkbox" name="equipment" value="wc">
+                            <div class="option-content">
+                                <div class="option-title">WC</div>
+                                <div class="option-desc">Wandhängend oder Standmodell</div>
+                            </div>
+                        </label>
+                        <label class="option-card">
+                            <input type="checkbox" name="equipment" value="waschtisch">
+                            <div class="option-content">
+                                <div class="option-title">Waschtisch</div>
+                                <div class="option-desc">Einfach oder Doppel</div>
+                            </div>
+                        </label>
+                        <label class="option-card">
+                            <input type="checkbox" name="equipment" value="heizkoerper">
+                            <div class="option-content">
+                                <div class="option-title">Heizkörper</div>
+                                <div class="option-desc">Handtuchtrockner</div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="calc-step" data-step="4">
+                    <h3>Wie schätzen Sie den Aufwand ein?</h3>
+                    <div class="option-grid-single">
+                        <label class="option-card-large">
+                            <input type="radio" name="effort" value="low">
+                            <div class="option-content">
+                                <div class="option-title">Gering</div>
+                                <div class="option-desc">Leitungen vorhanden, keine großen Umbauten</div>
+                            </div>
+                        </label>
+                        <label class="option-card-large">
+                            <input type="radio" name="effort" value="medium">
+                            <div class="option-content">
+                                <div class="option-title">Mittel</div>
+                                <div class="option-desc">Teilweise neue Leitungen, moderate Anpassungen</div>
+                            </div>
+                        </label>
+                        <label class="option-card-large">
+                            <input type="radio" name="effort" value="high">
+                            <div class="option-content">
+                                <div class="option-title">Hoch</div>
+                                <div class="option-desc">Komplettsanierung, neue Leitungen, Grundrissänderung</div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calculator-navigation">
+                <button class="calc-btn calc-btn-back" onclick="prevCalcStep()" style="display: none;">Zurück</button>
+                <button class="calc-btn calc-btn-next" onclick="nextCalcStep()">Weiter</button>
+            </div>
+
+            <div class="price-result" id="price-result" style="display: none;">
+                <h3 style="text-align:center">Ihre Preispakete</h3>
+                <p class="result-intro">Basierend auf Ihren Angaben haben wir drei Optionen für Sie zusammengestellt:</p>
+                
+                <div class="price-packages">
+                    <div class="price-package">
+                        <div class="package-header">
+                            <h4>Basis</h4>
+                            <div class="package-price" id="price-basic">8.500 €</div>
+                        </div>
+                        <ul class="package-features">
+                            <li>Standard-Qualität</li>
+                            <li>Solide Markenprodukte</li>
+                            <li>Fachgerechte Installation</li>
+                            <li>Gutes Preis-Leistungs-Verhältnis</li>
+                            <li>2 Jahre Garantie</li>
+                        </ul>
+                    </div>
+
+                    <div class="price-package featured">
+                        <div class="package-badge">Beliebteste Wahl</div>
+                        <div class="package-header">
+                            <h4>Komfort</h4>
+                            <div class="package-price" id="price-comfort">12.800 €</div>
+                        </div>
+                        <ul class="package-features">
+                            <li>Premium-Qualität</li>
+                            <li>Hochwertige Markenartikel</li>
+                            <li>Moderne Designs</li>
+                            <li>Inklusive Malerarbeiten</li>
+                            <li>3 Jahre Garantie</li>
+                        </ul>
+                    </div>
+
+                    <div class="price-package">
+                        <div class="package-header">
+                            <h4>Premium</h4>
+                            <div class="package-price" id="price-premium">18.500 €</div>
+                        </div>
+                        <ul class="package-features">
+                            <li>Luxus-Qualität</li>
+                            <li>Designer-Sanitärobjekte</li>
+                            <li>Exklusive Ausstattung</li>
+                            <li>Komplettservice inkl. Elektrik</li>
+                            <li>Smart Home Integration</li>
+                            <li>5 Jahre Garantie</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="result-cta">
+                    <p style="margin-bottom: 1.5rem; color: var(--text-medium);">
+                        * Alle Preise sind Richtwerte und können je nach individuellen Gegebenheiten variieren.
+                    </p>
+                    <a href="#contact" class="cta-button">Jetzt unverbindliches Angebot anfordern</a>
+                    <button class="calc-btn calc-btn-back" onclick="resetCalculator()" style="margin-top: 1rem;">Neue Berechnung starten</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="heating-calculator" class="calculator-content">
+            <p style="text-align: center; color: var(--text-medium); margin-bottom: 2.5rem; font-size: 1.05rem;">
+                Berechnen Sie Ihre geschätzten jährlichen Heizkosten und entdecken Sie Ihr Einsparpotenzial
+            </p>
+            
+            <div class="input-grid">
+                <div class="input-group">
+                    <label for="living-space">Wohnfläche (m²)</label>
+                    <input type="number" id="living-space" placeholder="z.B. 120" min="1">
+                </div>
+                
+                <div class="input-group">
+                    <label for="heating-type">Aktuelle Heizungsart</label>
+                    <select id="heating-type">
+                        <option value="">Bitte wählen...</option>
+                           <option value="gas">Gasheizung (alt)</option>
+                           <option value="gas-condensing">Gasbrennwert</option>
+                           <option value="oil">Ölheizung</option>
+                           <option value="heat-pump">Wärmepumpe</option>
+                           <option value="pellets">Pelletheizung</option>
+                           <option value="electric">Elektroheizung</option>
+                           <option value="district">Fernwärme</option>
+                       </select>
+                   </div>
+               </div>
+
+               <div class="input-grid">
+                   <div class="input-group">
+                       <label for="insulation">Dämmstandard</label>
+                       <select id="insulation">
+                           <option value="">Bitte wählen...</option>
+                           <option value="poor">Schlecht (Altbau ungedämmt)</option>
+                           <option value="average">Durchschnittlich</option>
+                           <option value="good">Gut (Neubau/saniert)</option>
+                           <option value="excellent">Sehr gut (Passivhaus)</option>
+                       </select>
+                   </div>
+                   
+                   <div class="input-group">
+                       <label for="age">Baujahr der Heizung</label>
+                       <select id="age">
+                           <option value="">Bitte wählen...</option>
+                           <option value="new">Unter 5 Jahre</option>
+                           <option value="medium">5-15 Jahre</option>
+                           <option value="old">15-25 Jahre</option>
+                           <option value="very-old">Über 25 Jahre</option>
+                       </select>
+                   </div>
+               </div>
+               
+               <div class="result" id="result"></div>
+           </div>
+       </div>
+   </div>
+</section>
+
+   <section class="process" id="process">
+       <div class="process-container">
+           <h2 class="section-title">Unser Projektablauf</h2>
+           <p class="section-subtitle">So läuft Ihr Projekt bei uns ab - transparent, professionell und termingerecht</p>
+           
+           <div class="process-steps">
+               <div class="process-step">
+                   <div class="process-image"></div>
+                   <div class="process-content">
+                       <div class="process-step-number">Schritt 1</div>
+                       <h4>Erstberatung</h4>
+                       <p>Kostenlose Beratung vor Ort zur Analyse Ihrer Bedürfnisse und Bestandsaufnahme</p>
+                   </div>
+               </div>
+               
+               <div class="process-step">
+                   <div class="process-image"></div>
+                   <div class="process-content">
+                       <div class="process-step-number">Schritt 2</div>
+                       <h4>Angebotserstellung</h4>
+                       <p>Detaillierter und transparenter Kostenvoranschlag mit allen Leistungen</p>
+                   </div>
+               </div>
+               
+               <div class="process-step">
+                   <div class="process-image"></div>
+                   <div class="process-content">
+                       <div class="process-step-number">Schritt 3</div>
+                       <h4>Terminplanung</h4>
+                       <p>Gemeinsame Abstimmung der Termine und Koordination aller Gewerke</p>
+                   </div>
+               </div>
+               
+               <div class="process-step">
+                   <div class="process-image"></div>
+                   <div class="process-content">
+                       <div class="process-step-number">Schritt 4</div>
+                       <h4>Installation</h4>
+                       <p>Fachgerechte Installation durch qualifizierte Monteure mit hochwertigen Materialien</p>
+                   </div>
+               </div>
+               
+               <div class="process-step">
+                   <div class="process-image"></div>
+                   <div class="process-content">
+                       <div class="process-step-number">Schritt 5</div>
+                       <h4>Inbetriebnahme</h4>
+                       <p>Professionelle Inbetriebnahme, Einweisung und Dokumentation</p>
+                   </div>
+               </div>
+               
+               <div class="process-step">
+                   <div class="process-image"></div>
+                   <div class="process-content">
+                       <div class="process-step-number">Schritt 6</div>
+                       <h4>Service</h4>
+                       <p>Regelmäßige Wartung und langfristiger Service für optimale Funktion</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+   <section class="faq" id="faq">
+       <div class="faq-container">
+           <h2 class="section-title">Häufig gestellte Fragen</h2>
+           <p class="faq-intro">
+               Hier finden Sie Antworten auf die wichtigsten Fragen rund um unsere Dienstleistungen. 
+               Sollten Sie weitere Fragen haben, kontaktieren Sie uns gerne direkt.
+           </p>
+           
+           <div class="faq-list">
+               <div class="faq-item">
+                   <button class="faq-question">
+                       In welchem Gebiet sind Sie tätig?
+                       <span class="faq-icon"></span>
+                   </button>
+                   <div class="faq-answer">
+                       <p>Unser Einsatzgebiet erstreckt sich über das gesamte Rhein-Main-Gebiet. Wir sind primär im Raum <strong>Frankfurt</strong>, <strong>Wiesbaden</strong>, <strong>Mainz</strong>, <strong>Darmstadt</strong>, <strong>Hanau</strong> und <strong>Aschaffenburg</strong> sowie natürlich rund um unseren Standort in Bad Soden-Salmünster für Sie im Einsatz.</p>
+                   </div>
+               </div>
+
+               <div class="faq-item">
+                   <button class="faq-question">
+                       Wie schnell können Sie einen Termin für eine Heizungswartung anbieten?
+                       <span class="faq-icon"></span>
+                   </button>
+                   <div class="faq-answer">
+                       <p>In der Regel können wir Ihnen innerhalb von 1-2 Wochen einen Termin anbieten. In dringenden Fällen oder bei Notfällen sind wir auch kurzfristig für Sie da.</p>
+                   </div>
+               </div>
+
+               <div class="faq-item">
+                   <button class="faq-question">
+                       Was kostet eine neue Heizungsanlage?
+                       <span class="faq-icon"></span>
+                   </button>
+                   <div class="faq-answer">
+                       <p>Die Kosten variieren je nach Heizungstyp, Größe des Gebäudes und individuellen Anforderungen. Eine moderne Gasbrennwertheizung beginnt bei ca. 8.000-12.000 €, während Wärmepumpen zwischen 15.000-25.000 € kosten. Nach einer kostenlosen Vor-Ort-Beratung erstellen wir Ihnen ein transparentes, auf Ihre Bedürfnisse zugeschnittenes Angebot.</p>
+                   </div>
+               </div>
+
+               <div class="faq-item">
+                   <button class="faq-question">
+                       Welche Fördermöglichkeiten gibt es für neue Heizungen?
+                       <span class="faq-icon"></span>
+                   </button>
+                   <div class="faq-answer">
+                       <p>Es gibt verschiedene Förderprogramme von BAFA und KfW. Je nach Heizungstyp können Sie bis zu 40% Zuschuss erhalten - besonders für Wärmepumpen und erneuerbare Energien. Wir beraten Sie umfassend zu allen Fördermöglichkeiten und unterstützen Sie bei der Antragstellung.</p>
+                   </div>
+               </div>
+
+               <div class="faq-item">
+                   <button class="faq-question">
+                       Wie oft sollte eine Heizung gewartet werden?
+                       <span class="faq-icon"></span>
+                   </button>
+                   <div class="faq-answer">
+                       <p>Wir empfehlen eine jährliche Wartung Ihrer Heizungsanlage, idealerweise vor Beginn der Heizperiode im Herbst. Regelmäßige Wartung erhöht die Lebensdauer der Anlage, senkt den Energieverbrauch um bis zu 15% und verhindert kostspielige Reparaturen. Gerne bieten wir Ihnen einen Wartungsvertrag mit automatischer Terminerinnerung an.</p>
+                   </div>
+               </div>
+
+               <div class="faq-item">
+                   <button class="faq-question">
+                       Was mache ich bei einem Rohrbruch oder Wasserschaden?
+                       <span class="faq-icon"></span>
+                   </button>
+                   <div class="faq-answer">
+                       <p>Drehen Sie sofort den Hauptwasserhahn zu und rufen Sie unseren 24h-Notdienst unter +49 170 123 456 7 an. Wir sind in der Regel innerhalb von 60 Minuten vor Ort und kümmern uns um die Schadensbegrenzung und fachgerechte Reparatur. Dokumentieren Sie den Schaden mit Fotos für Ihre Versicherung.</p>
+                   </div>
+               </div>
+
+               <div class="faq-item">
+                   <button class="faq-question">
+                       Sind Wärmepumpen auch für Altbauten geeignet?
+                       <span class="faq-icon"></span>
+                   </button>
+                   <div class="faq-answer">
+                       <p>Ja, moderne Wärmepumpen können auch in Altbauten effizient arbeiten. Entscheidend sind die Vorlauftemperatur und der Dämmstandard des Gebäudes. Bei unserer kostenlosen Beratung prüfen wir die Gegebenheiten vor Ort und empfehlen Ihnen die optimale Lösung - gegebenenfalls in Kombination mit einer Hybridheizung.</p>
+                   </div>
+               </div>
+
+               <div class="faq-item">
+                   <button class="faq-question">
+                       Übernehmen Sie auch die Entsorgung der alten Heizung?
+                       <span class="faq-icon"></span>
+                   </button>
+                   <div class="faq-answer">
+                       <p>Selbstverständlich! Die fachgerechte Demontage und umweltgerechte Entsorgung Ihrer alten Heizungsanlage ist bei uns im Komplettpaket enthalten. Wir kümmern uns um alle Schritte - von der Stilllegung bis zur Entsorgung gemäß den gesetzlichen Vorschriften.</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <section class="contact-form" id="contact">
+       <div class="contact-form-container">
+           <div class="contact-form-header">
+               <h2>Kontaktieren Sie uns</h2>
+               <p class="contact-form-subtitle">
+                   Haben Sie Fragen oder möchten Sie ein unverbindliches Angebot erhalten? 
+                   Füllen Sie einfach das Formular aus und wir melden uns zeitnah bei Ihnen.
+               </p>
+           </div>
+
+           <div class="contact-form-content">
+            <form class="form-grid" action="https://submit-form.com/rAw8bSvpg" method="POST">
+                <input type="hidden" name="_formname" value="Thermo Tec Kontaktformular">
+                
+                <input type="hidden" name="_redirect" value="http://thermo-tec.de/danke.html">
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contact-name">Vor- und Nachname *</label>
+                        <input type="text" id="contact-name" name="name" required placeholder="Max Mustermann">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">E-Mail-Adresse *</label>
+                        <input type="email" id="contact-email" name="email" required placeholder="max@beispiel.de">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contact-phone">Telefonnummer</label>
+                        <input type="tel" id="contact-phone" name="phone" placeholder="+49 123 456789">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">Betreff *</label>
+                        <select id="contact-subject" name="subject" required>
+                            <option value="">Bitte wählen...</option>
+                            <option value="Angebot anfordern">Angebot anfordern</option>
+                            <option value="Beratungstermin">Beratungstermin</option>
+                            <option value="Wartung">Wartung</option>
+                            <option value="Sonstiges">Sonstiges</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-message">Ihre Nachricht *</label>
+                    <textarea id="contact-message" name="message" rows="6" required placeholder="Beschreiben Sie Ihr Anliegen..."></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="privacy" value="akzeptiert" required>
+                        <span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und akzeptiere sie. *</span>
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="form-submit-btn">
+                        Nachricht senden
+                    </button>
+                    <p class="form-note">* Pflichtfelder</p>
+                </div>
+            </form>
+
+               <div class="contact-info-sidebar">
+                   <div class="contact-info-card">
+                       <div class="contact-info-icon">
+                           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                               <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                           </svg>
+                       </div>
+                       <h4>Telefon</h4>
+                       <p><a href="tel:+4915155688230">+49 1515 5688230</a></p>
+                       <p class="contact-hours">Mo-Do: 7:00 - 17:00 Uhr<br>Fr: 7:00 - 14:00 Uhr</p>
+                   </div>
+
+                   <div class="contact-info-card">
+                       <div class="contact-info-icon">
+                           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                               <polyline points="22,6 12,13 2,6"></polyline>
+                           </svg>
+                       </div>
+                       <h4>E-Mail</h4>
+                       <p><a href="mailto:info@thermo-tec.de">info@thermo-tec.de</a></p>
+                   </div>
+
+                   <div class="contact-info-card">
+                       <div class="contact-info-icon">
+                           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                               <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                               <circle cx="12" cy="10" r="3"></circle>
+                           </svg>
+                       </div>
+                       <h4>Adresse</h4>
+                       <p>Thermo Tec Meisterbetrieb<br>
+                       Carl-Gladitz-Straße 10<br>
+                       63628 Bad Soden-Salmünster</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <footer class="footer">
+       <div class="footer-content">
+           <div class="footer-column">
+               <h3>Unternehmen</h3>
+               <ul>
+                   <li><a href="#home">Home</a></li>
+                   <li><a href="#services">Leistungen</a></li>
+                   <li><a href="#why-choose">Über Uns</a></li>
+                   <li><a href="#faq">FAQ</a></li>
+                   <li><a href="#contact">Kontakt</a></li>
+               </ul>
+           </div>
+           
+           <div class="footer-column">
+               <h3>Rechtliches</h3>
+               <ul>
+                   <li><a href="datenschutz.html" class="underline">Datenschutz</a></li>
+                   <li><a href="impressum.html" class="underline">Impressum</a></li>
+               </ul>
+           </div>
+           
+           <div class="footer-column">
+               <h3>Kontakt</h3>
+               
+               <div class="footer-contact-item">
+                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                   </svg>
+                   <div class="footer-contact-info">
+                       <strong><a href="tel:+4915155688230">+49 1515 5688230</a></strong>
+                   </div>
+               </div>
+               
+               <div class="footer-contact-item">
+                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                       <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                       <circle cx="12" cy="10" r="3"></circle>
+                   </svg>
+                   <div class="footer-contact-info">
+                       <strong>Thermo Tec Meisterbetrieb</strong>
+                       <p>Carl-Gladitz-Straße 10, 63628 Bad Soden-Salmünster</p>
+                       <p><a href="mailto:info@thermo-tec.de">info@thermo-tec.de</a></p>
+                       <p style="font-size: 0.8rem; margin-top: 10px; opacity: 0.5;">
+                           Ihr Partner für Frankfurt, Wiesbaden, Mainz, Darmstadt, Hanau, Aschaffenburg und Bad Soden-Salmünster.
+                       </p>
+                   </div>
+               </div>
+           </div>
+       </div>
+       
+       <div class="footer-bottom">
+           <p>&copy; 2025 Thermo Tec Meisterbetrieb. Alle Rechte vorbehalten.</p>
+       </div>
+   </footer>
+
+<script>
+// Header scroll effect
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('.header');
+    if (header) {
+        if (window.scrollY > 100) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    }
+});
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            const headerOffset = 80;
+            const elementPosition = target.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+// FAQ Accordion
+document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', function() {
+        const faqItem = this.parentElement;
+        const isActive = faqItem.classList.contains('active');
+        
+        // Close all FAQ items
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.classList.remove('active');
+        });
+        
+        // Open clicked item if it wasn't active
+        if (!isActive) {
+            faqItem.classList.add('active');
+        }
+    });
+});
+
+// Price Calculator Functions
+let currentStep = 1;
+const totalSteps = 4;
+
+function nextCalcStep() {
+    if (currentStep < totalSteps) {
+        document.querySelector(`.calc-step[data-step="${currentStep}"]`).classList.remove('active');
+        document.querySelector(`.progress-step[data-step="${currentStep}"]`).classList.add('completed');
+        
+        const progressLines = document.querySelectorAll('.progress-line');
+        if (progressLines[currentStep - 1]) {
+            progressLines[currentStep - 1].classList.add('completed');
+        }
+        
+        currentStep++;
+        
+        document.querySelector(`.calc-step[data-step="${currentStep}"]`).classList.add('active');
+        document.querySelector(`.progress-step[data-step="${currentStep}"]`).classList.add('active');
+        
+        updateStepIndicator();
+        updateNavigationButtons();
+    } else {
+        calculatePrice();
+    }
+}
+
+function prevCalcStep() {
+    if (currentStep > 1) {
+        document.querySelector(`.calc-step[data-step="${currentStep}"]`).classList.remove('active');
+        document.querySelector(`.progress-step[data-step="${currentStep}"]`).classList.remove('active');
+        
+        currentStep--;
+        
+        const progressLines = document.querySelectorAll('.progress-line');
+        if (progressLines[currentStep - 1]) {
+            progressLines[currentStep - 1].classList.remove('completed');
+        }
+        
+        document.querySelector(`.calc-step[data-step="${currentStep}"]`).classList.add('active');
+        document.querySelector(`.progress-step[data-step="${currentStep+1}"]`).classList.remove('completed');
+        
+        updateStepIndicator();
+        updateNavigationButtons();
+    }
+}
+
+function updateStepIndicator() {
+    const indicator = document.querySelector('.current-step');
+    if (indicator) {
+        indicator.textContent = `Schritt ${currentStep}`;
+    }
+}
+
+function updateNavigationButtons() {
+    const backBtn = document.querySelector('.calc-btn-back');
+    const nextBtn = document.querySelector('.calc-btn-next');
+    
+    if (backBtn) {
+        if (currentStep === 1) {
+            backBtn.style.display = 'none';
+        } else {
+            backBtn.style.display = 'block';
+        }
+    }
+    
+    if (nextBtn) {
+        if (currentStep === totalSteps) {
+            nextBtn.textContent = 'Preis berechnen';
+        } else {
+            nextBtn.textContent = 'Weiter';
+        }
+    }
+}
+
+function calculatePrice() {
+    const projectType = document.querySelector('input[name="project-type"]:checked')?.value || 'complete';
+    const areaSize = parseFloat(document.getElementById('area-size')?.value) || 8;
+    const equipment = document.querySelectorAll('input[name="equipment"]:checked').length;
+    const effort = document.querySelector('input[name="effort"]:checked')?.value || 'medium';
+    
+    const basicBasePrice = 6846.95;
+    const comfortBasePrice = 13223.70;
+    const premiumBasePrice = 19555.60;
+    
+    let projectFactor = projectType === 'complete' ? 1.15 : 1.0;
+    
+    let areaFactor = 1;
+    if (areaSize > 8) {
+        areaFactor = 1 + ((areaSize - 8) * 0.03);
+    } else if (areaSize < 8) {
+        areaFactor = 1 - ((8 - areaSize) * 0.02);
+    }
+    
+    let equipmentFactor = 1;
+    if (equipment >= 4) {
+        equipmentFactor = 1.12;
+    } else if (equipment >= 3) {
+        equipmentFactor = 1.08;
+    } else if (equipment >= 2) {
+        equipmentFactor = 1.05;
+    } else if (equipment >= 1) {
+        equipmentFactor = 1.02;
+    }
+    
+    const effortFactors = { low: 0.88, medium: 1, high: 1.30 };
+    const effortFactor = effortFactors[effort];
+    
+    const basicPrice = Math.round(basicBasePrice * projectFactor * areaFactor * equipmentFactor * effortFactor);
+    const comfortPrice = Math.round(comfortBasePrice * projectFactor * areaFactor * equipmentFactor * effortFactor);
+    const premiumPrice = Math.round(premiumBasePrice * projectFactor * areaFactor * equipmentFactor * effortFactor);
+    
+    const basicEl = document.getElementById('price-basic');
+    const comfortEl = document.getElementById('price-comfort');
+    const premiumEl = document.getElementById('price-premium');
+    
+    if (basicEl) basicEl.textContent = basicPrice.toLocaleString('de-DE') + ' €';
+    if (comfortEl) comfortEl.textContent = comfortPrice.toLocaleString('de-DE') + ' €';
+    if (premiumEl) premiumEl.textContent = premiumPrice.toLocaleString('de-DE') + ' €';
+    
+    const steps = document.querySelector('.calculator-steps');
+    const navigation = document.querySelector('.calculator-navigation');
+    const progressBar = document.querySelector('.progress-bar');
+    const stepIndicator = document.querySelector('.step-indicator');
+    const result = document.getElementById('price-result');
+    
+    if (steps) steps.style.display = 'none';
+    if (navigation) navigation.style.display = 'none';
+    if (progressBar) progressBar.style.display = 'none';
+    if (stepIndicator) stepIndicator.style.display = 'none';
+    if (result) result.style.display = 'block';
+}
+
+function resetCalculator() {
+    currentStep = 1;
+    
+    document.querySelectorAll('.calc-step input').forEach(input => {
+        input.checked = false;
+        if (input.type === 'number') input.value = '';
+    });
+    
+    document.querySelectorAll('.calc-step').forEach(step => step.classList.remove('active'));
+    const firstStep = document.querySelector('.calc-step[data-step="1"]');
+    if (firstStep) firstStep.classList.add('active');
+    
+    document.querySelectorAll('.progress-step').forEach(step => {
+        step.classList.remove('active', 'completed');
+    });
+    const firstProgress = document.querySelector('.progress-step[data-step="1"]');
+    if (firstProgress) firstProgress.classList.add('active');
+    
+    document.querySelectorAll('.progress-line').forEach(line => line.classList.remove('completed'));
+    
+    const steps = document.querySelector('.calculator-steps');
+    const navigation = document.querySelector('.calculator-navigation');
+    const progressBar = document.querySelector('.progress-bar');
+    const stepIndicator = document.querySelector('.step-indicator');
+    const result = document.getElementById('price-result');
+    
+    if (steps) steps.style.display = 'block';
+    if (navigation) navigation.style.display = 'flex';
+    if (progressBar) progressBar.style.display = 'flex';
+    if (stepIndicator) stepIndicator.style.display = 'block';
+    if (result) result.style.display = 'none';
+    
+    updateStepIndicator();
+    updateNavigationButtons();
+}
+
+// Switch between calculators
+window.switchCalculator = function(type) {
+    document.querySelectorAll('.calculator-content').forEach(content => {
+        content.classList.remove('active');
+    });
+    
+    document.querySelectorAll('.calculator-tab').forEach(tab => {
+        tab.classList.remove('active');
+    });
+    
+    if (type === 'price') {
+        const priceCalc = document.getElementById('price-calculator');
+        if (priceCalc) priceCalc.classList.add('active');
+        const tabs = document.querySelectorAll('.calculator-tab');
+        if (tabs[0]) tabs[0].classList.add('active');
+    } else if (type === 'heating') {
+        const heatingCalc = document.getElementById('heating-calculator');
+        if (heatingCalc) heatingCalc.classList.add('active');
+        const tabs = document.querySelectorAll('.calculator-tab');
+        if (tabs[1]) tabs[1].classList.add('active');
+    }
+};
+
+// Heating Calculator
+const heatingInputs = ['living-space', 'heating-type', 'insulation', 'age'];
+
+heatingInputs.forEach(id => {
+    const element = document.getElementById(id);
+    if (element) {
+        element.addEventListener('change', calculateHeatingCosts);
+    }
+});
+
+function calculateHeatingCosts() {
+    const livingSpace = parseFloat(document.getElementById('living-space')?.value);
+    const heatingType = document.getElementById('heating-type')?.value;
+    const insulation = document.getElementById('insulation')?.value;
+    const age = document.getElementById('age')?.value;
+    
+    // Ergebnis ausblenden, wenn nicht alle Felder ausgefüllt sind
+    const resultDiv = document.getElementById('result');
+    if (!resultDiv) return;
+
+    if (!livingSpace || !heatingType || !insulation || !age) {
+        resultDiv.classList.remove('show'); // Verstecken, wenn unvollständig
+        return;
+    }
+    
+    const energyConsumption = {
+        'gas': 150,
+        'gas-condensing': 120,
+        'oil': 160,
+        'heat-pump': 40,
+        'pellets': 100,
+        'electric': 180,
+        'district': 130
+    };
+    
+    const energyPrices = {
+        'gas': 0.12,
+        'gas-condensing': 0.12,
+        'oil': 0.10,
+        'heat-pump': 0.30,
+        'pellets': 0.06,
+        'electric': 0.35,
+        'district': 0.11
+    };
+    
+    const insulationFactors = {
+        'poor': 1.4,
+        'average': 1.0,
+        'good': 0.7,
+        'excellent': 0.5
+    };
+    
+    const ageFactors = {
+        'new': 0.9,
+        'medium': 1.0,
+        'old': 1.15,
+        'very-old': 1.3
+    };
+    
+    const baseConsumption = energyConsumption[heatingType] || 150;
+    const pricePerKWh = energyPrices[heatingType] || 0.12;
+    const insulationFactor = insulationFactors[insulation] || 1.0;
+    const ageFactor = ageFactors[age] || 1.0;
+    
+    const totalConsumption = livingSpace * baseConsumption * insulationFactor * ageFactor;
+    const currentCosts = totalConsumption * pricePerKWh;
+    
+    const heatPumpConsumption = livingSpace * 40 * insulationFactors[insulation] * 0.9;
+    const heatPumpCosts = heatPumpConsumption * 0.30;
+    const annualSavings = currentCosts - heatPumpCosts;
+    
+    // WICHTIG: Hier machen wir das Ergebnis sichtbar!
+    resultDiv.classList.add('show');
+
+    resultDiv.innerHTML = `
+        <div style="background: white; padding: 2rem; border-radius: 12px; margin-top: 2rem;">
+            <h3 style="margin-bottom: 1.5rem; color: var(--text-dark);">Ihre jährlichen Heizkosten</h3>
+            <div style="display: grid; gap: 1.5rem;">
+                <div style="background: var(--light-gray); padding: 1.5rem; border-radius: 8px;">
+                    <div style="color: var(--text-medium); margin-bottom: 0.5rem;">Aktuelle Heizkosten</div>
+                    <div style="font-size: 2rem; font-weight: 700; color: var(--gradient-teal);">${Math.round(currentCosts).toLocaleString('de-DE')} €</div>
+                    <div style="color: var(--text-medium); font-size: 0.9rem; margin-top: 0.5rem;">pro Jahr</div>
+                </div>
+                ${annualSavings > 0 ? `
+                <div style="background: #e8f5e9; padding: 1.5rem; border-radius: 8px;">
+                    <div style="color: var(--text-medium); margin-bottom: 0.5rem;">Mögliche Ersparnis mit Wärmepumpe</div>
+                    <div style="font-size: 1.8rem; font-weight: 700; color: #2e7d32;">${Math.round(annualSavings).toLocaleString('de-DE')} €</div>
+                    <p style="margin-top: 1rem; color: var(--text-medium); font-size: 0.95rem;">Das entspricht einer Ersparnis von <strong>${Math.round((annualSavings/currentCosts)*100)}%</strong> Ihrer aktuellen Heizkosten.</p>
+                </div>
+                ` : ''}
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="#contact" class="cta-button">Jetzt Beratungstermin vereinbaren</a>
+            </div>
+        </div>
+    `;
+}
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', function() {
+    updateNavigationButtons();
+});
+</script>
+</body>
+</html>

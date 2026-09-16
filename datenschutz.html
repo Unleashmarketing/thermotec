@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="de">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung - Thermo Tec Meisterbetrieb</title>
+    <meta name="description" content="Datenschutzerklärung von Thermo Tec Meisterbetrieb - Informationen zum Datenschutz und zur Datenverarbeitung">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-blue: #B23B34;
+            --primary-teal: #D9573F;
+            --primary-green: #8B2E2E;
+            --light-gray: #f8f9fa;
+            --dark-gray: #2c3e50;
+            --accent-purple: #8B2E2E;
+            --white: #ffffff;
+            --text-dark: #333333;
+            --text-medium: #666666;
+            --border-color: #e0e0e0;
+            --gradient-purple: #8B2E2E;
+            --gradient-blue: #B23B34;
+            --gradient-teal: #D9573F;
+            --gradient-green: #E8956B;
+            --brand-gradient: linear-gradient(90deg, #8B2E2E 0%, #B23B34 33%, #D9573F 66%, #E8956B 100%);
+        }
+
+        body {
+            font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+            background: var(--light-gray);
+        }
+
+        .header {
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+            padding: 1.5rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--brand-gradient);
+            border-radius: 10px;
+        }
+
+        .logo-icon img {
+            width: 60%;
+            height: 60%;
+            object-fit: contain;
+            filter: brightness(0) invert(1);
+        }
+
+        .logo-name {
+            color: var(--text-dark);
+            font-weight: 700;
+            font-size: 1.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .logo-name span {
+            background: var(--brand-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-left: 2px;
+        }
+
+        .back-link {
+            color: var(--text-medium);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: var(--primary-blue);
+        }
+
+        .content-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 140px 2rem 80px;
+        }
+
+        .page-header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        .page-header .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-medium);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+
+        .content-section {
+            margin-bottom: 3rem;
+        }
+
+        .content-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .content-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+            font-weight: 600;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--light-gray);
+        }
+
+        .content-section h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        .content-section p {
+            margin-bottom: 1rem;
+            color: var(--text-medium);
+            line-height: 1.8;
+        }
+
+        .content-section ul {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+        }
+
+        .content-section ul li {
+            margin-bottom: 0.5rem;
+            color: var(--text-medium);
+            line-height: 1.6;
+        }
+
+        .content-section strong {
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        .content-section a {
+            color: var(--gradient-teal);
+            text-decoration: none;
+        }
+
+        .content-section a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight-box {
+            background: var(--light-gray);
+            border-left: 4px solid var(--gradient-teal);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-info {
+            background: var(--light-gray);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+
+        .contact-info h3 {
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+
+        .footer {
+            background: #2c2c2c;
+            color: white;
+            padding: 40px 0;
+            margin-top: 80px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .footer-content p {
+            opacity: 0.6;
+            font-size: 0.9rem;
+        }
+
+        .footer-content a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        .footer-content a:hover {
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .content-wrapper {
+                padding: 120px 1.5rem 60px;
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .content-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .content-section h2 {
+                font-size: 1.5rem;
+            }
+
+            .content-section h3 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="images/Icon-Flamme.svg" alt="">
+                </div>
+                <div class="logo-name">Thermo<span>Tec</span></div>
+            </a>
+            <a href="index.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Zurück zur Startseite
+            </a>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="page-header">
+            <h1>Datenschutzerklärung</h1>
+            <p class="subtitle">Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst und behandeln Ihre personenbezogenen Daten vertraulich entsprechend der gesetzlichen Datenschutzvorschriften.</p>
+        </div>
+
+        <div class="content-card">
+            <div class="content-section">
+                <h2>1. Verantwortlicher</h2>
+                <div class="contact-info">
+                    <h3>Thermo Tec Meisterbetrieb</h3>
+                    <p><strong>Inhaber:</strong> Leo Tornes<br>
+                    Carl-Gladitz-Straße 10<br>
+                    63628 Bad Soden-Salmünster<br>
+                    Deutschland</p>
+                    <p><strong>Telefon:</strong> +49 1515 5688230<br>
+                    <strong>E-Mail:</strong> info@thermo-tec.de</p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>2. Allgemeine Hinweise</h2>
+                <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen oder unsere Dienstleistungen in Anspruch nehmen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
+                
+                <h3>Datenerfassung auf unserer Website</h3>
+                <p><strong>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong></p>
+                <p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.</p>
+                
+                <p><strong>Wie erfassen wir Ihre Daten?</strong></p>
+                <p>Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.B. um Daten handeln, die Sie in ein Kontaktformular eingeben oder uns telefonisch oder per E-Mail mitteilen.</p>
+                <p>Andere Daten werden automatisch beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z.B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie unsere Website betreten.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>3. Datenerfassung und -verarbeitung</h2>
+                
+                <h3>3.1 Hosting</h3>
+                <p>Unsere Website wird bei der Strato AG gehostet. Der Hoster speichert automatisch Informationen in Server-Log-Dateien, die Ihr Browser automatisch übermittelt:</p>
+                <ul>
+                    <li>IP-Adresse</li>
+                    <li>Browsertyp und -version</li>
+                    <li>Verwendetes Betriebssystem</li>
+                    <li>Referrer URL</li>
+                    <li>Hostname des zugreifenden Rechners</li>
+                    <li>Uhrzeit der Serveranfrage</li>
+                </ul>
+                <p>Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und der Optimierung seiner Website – hierzu müssen die Server-Log-Files erfasst werden.</p>
+                <p><strong>Anbieter:</strong> Strato AG, Otto-Ostrowski-Straße 7, 10249 Berlin</p>
+
+                <h3>3.2 Kontaktaufnahme</h3>
+                <p>Wenn Sie uns per Kontaktformular, E-Mail oder Telefon Anfragen zukommen lassen, werden Ihre Angaben inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert.</p>
+                <p>Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO).</p>
+
+                <h3>3.3 Kontaktformular (Formspark)</h3>
+                <p>Für unser Kontaktformular nutzen wir den Dienst Formspark (Formspark Ltd.). Wenn Sie das Kontaktformular nutzen, werden Ihre eingegebenen Daten an die Server von Formspark übermittelt und dort verarbeitet.</p>
+                <p>Formspark verarbeitet folgende Daten:</p>
+                <ul>
+                    <li>Name, E-Mail-Adresse, Telefonnummer (falls angegeben)</li>
+                    <li>Ihre Nachricht und gewählter Betreff</li>
+                    <li>Zeitstempel der Übermittlung</li>
+                    <li>Zustimmung zur Datenschutzerklärung</li>
+                </ul>
+                <p>Die Datenverarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse) zur Bearbeitung Ihrer Anfrage. Die übermittelten Daten werden von uns per E-Mail empfangen und für die Bearbeitung Ihrer Anfrage verwendet.</p>
+                <p>Weitere Informationen finden Sie in der Datenschutzerklärung von Formspark: <a href="https://formspark.io/legal/privacy-policy/" target="_blank">https://formspark.io/legal/privacy-policy/</a></p>
+
+                <h3>3.4 Angebotserstellung und Auftragsabwicklung</h3>
+                <p>Zur Erstellung von Angeboten und zur Abwicklung von Aufträgen verarbeiten wir folgende Daten:</p>
+                <ul>
+                    <li>Name und Kontaktdaten (Anschrift, Telefon, E-Mail)</li>
+                    <li>Objektdaten (Adresse, Gebäudeinformationen)</li>
+                    <li>Technische Daten (bestehende Anlagen, gewünschte Leistungen)</li>
+                    <li>Auftragsbezogene Daten (Angebote, Rechnungen, Protokolle)</li>
+                    <li>Zahlungsinformationen</li>
+                </ul>
+                <p>Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO zur Vertragserfüllung und gesetzlicher Aufbewahrungspflichten gemäß Art. 6 Abs. 1 lit. c DSGVO.</p>
+
+                <h3>3.5 Wartung und Service</h3>
+                <p>Im Rahmen von Wartungsverträgen und Serviceleistungen speichern wir:</p>
+                <ul>
+                    <li>Kundenstammdaten</li>
+                    <li>Anlagendetails und Wartungsprotokolle</li>
+                    <li>Termine und Einsatzdokumentation</li>
+                    <li>Fotodokumentation (mit Ihrer Einwilligung)</li>
+                </ul>
+                <p>Diese Datenverarbeitung dient der ordnungsgemäßen Vertragserfüllung und erfolgt auf Basis von Art. 6 Abs. 1 lit. b DSGVO.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>4. Externe Dienste</h2>
+                
+                <h3>4.1 Google Fonts</h3>
+                <p>Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten so genannte Google Fonts, die von Google bereitgestellt werden. Beim Aufruf einer Seite lädt Ihr Browser die benötigten Fonts in ihren Browsercache, um Texte und Schriftarten korrekt anzuzeigen.</p>
+                <p>Zu diesem Zweck muss der von Ihnen verwendete Browser Verbindung zu den Servern von Google aufnehmen. Hierdurch erlangt Google Kenntnis darüber, dass über Ihre IP-Adresse unsere Website aufgerufen wurde.</p>
+                <p>Die Nutzung von Google Fonts erfolgt im Interesse einer einheitlichen und ansprechenden Darstellung unserer Online-Angebote. Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar.</p>
+                <p>Weitere Informationen zu Google Fonts finden Sie unter <a href="https://developers.google.com/fonts/faq" target="_blank">https://developers.google.com/fonts/faq</a> und in der Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+            </div>
+
+            <div class="content-section">
+                <h2>5. Cookies</h2>
+                <p>Unsere Website verwendet Cookies. Das sind kleine Textdateien, die Ihr Webbrowser auf Ihrem Endgerät speichert. Cookies helfen uns dabei, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen.</p>
+                <p>Die meisten der von uns verwendeten Cookies sind so genannte "Session-Cookies". Sie werden nach Ende Ihres Besuchs automatisch gelöscht. Andere Cookies bleiben auf Ihrem Endgerät gespeichert bis Sie diese löschen. Diese Cookies ermöglichen es uns, Ihren Browser beim nächsten Besuch wiederzuerkennen.</p>
+                <p>Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder generell ausschließen sowie das automatische Löschen der Cookies beim Schließen des Browsers aktivieren.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>6. Speicherdauer</h2>
+                <p>Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben.</p>
+                <p>Steuer- und handelsrechtliche Aufbewahrungsfristen betragen in der Regel 6 bis 10 Jahre.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>7. Ihre Rechte</h2>
+                <p>Sie haben jederzeit das Recht:</p>
+                <ul>
+                    <li><strong>Auskunft</strong> über Ihre bei uns gespeicherten personenbezogenen Daten und deren Verarbeitung zu verlangen (Art. 15 DSGVO)</li>
+                    <li><strong>Berichtigung</strong> unrichtiger personenbezogener Daten zu verlangen (Art. 16 DSGVO)</li>
+                    <li><strong>Löschung</strong> Ihrer bei uns gespeicherten personenbezogenen Daten zu verlangen (Art. 17 DSGVO)</li>
+                    <li>Die <strong>Einschränkung der Verarbeitung</strong> Ihrer personenbezogenen Daten zu verlangen (Art. 18 DSGVO)</li>
+                    <li><strong>Widerspruch</strong> gegen die Verarbeitung Ihrer personenbezogenen Daten einzulegen (Art. 21 DSGVO)</li>
+                    <li>Die <strong>Datenübertragbarkeit</strong> zu verlangen (Art. 20 DSGVO)</li>
+                </ul>
+                <p>Zur Ausübung Ihrer Rechte wenden Sie sich bitte an die oben genannten Kontaktdaten.</p>
+                
+                <div class="highlight-box">
+                    <p><strong>Beschwerderecht bei der Aufsichtsbehörde</strong></p>
+                    <p>Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten durch uns zu beschweren.</p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>8. Datensicherheit</h2>
+                <p>Wir verwenden innerhalb des Website-Besuchs das verbreitete SSL-Verfahren (Secure Socket Layer) in Verbindung mit der jeweils höchsten Verschlüsselungsstufe, die von Ihrem Browser unterstützt wird. Ob eine einzelne Seite unseres Internetauftrittes verschlüsselt übertragen wird, erkennen Sie an der geschlossenen Darstellung des Schlosssymbols in der Statusleiste Ihres Browsers.</p>
+                <p>Diese Website nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL-bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von "http://" auf "https://" wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.</p>
+                <p>Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.</p>
+                <p>Wir bedienen uns geeigneter technischer und organisatorischer Sicherheitsmaßnahmen, um Ihre Daten gegen zufällige oder vorsätzliche Manipulationen, teilweisen oder vollständigen Verlust, Zerstörung oder gegen den unbefugten Zugriff Dritter zu schützen.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>9. Weitergabe von Daten</h2>
+                <p>Eine Übermittlung Ihrer persönlichen Daten an Dritte zu anderen als den im Folgenden aufgeführten Zwecken findet nicht statt.</p>
+                <p>Wir geben Ihre persönlichen Daten nur an Dritte weiter, wenn:</p>
+                <ul>
+                    <li>Sie Ihre ausdrückliche Einwilligung dazu erteilt haben (Art. 6 Abs. 1 lit. a DSGVO)</li>
+                    <li>Die Weitergabe zur Erfüllung unserer vertraglichen Pflichten erforderlich ist (Art. 6 Abs. 1 lit. b DSGVO)</li>
+                    <li>Eine rechtliche Verpflichtung zur Weitergabe besteht (Art. 6 Abs. 1 lit. c DSGVO)</li>
+                    <li>Dies zur Durchsetzung unserer Rechte erforderlich ist (Art. 6 Abs. 1 lit. f DSGVO)</li>
+                </ul>
+                <p>Mögliche Empfänger können sein:</p>
+                <ul>
+                    <li>Subunternehmer bei der Auftragsausführung</li>
+                    <li>Hersteller im Rahmen von Gewährleistungsansprüchen</li>
+                    <li>Steuerberater, Wirtschaftsprüfer</li>
+                    <li>IT-Dienstleister (Hosting, E-Mail, Formulardienste)</li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h2>10. Änderungen dieser Datenschutzerklärung</h2>
+                <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.</p>
+            </div>
+
+            <div class="content-section">
+                <p><strong>Stand:</strong> Januar 2025</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Thermo Tec Meisterbetrieb. Alle Rechte vorbehalten.</p>
+            <div style="margin-top: 1rem;">
+                <a href="index.html">Home</a>
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
